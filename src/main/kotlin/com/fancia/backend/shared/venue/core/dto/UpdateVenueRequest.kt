@@ -1,5 +1,6 @@
 package com.fancia.backend.shared.venue.core.dto
 
+import com.fancia.backend.shared.common.location.core.dto.LocationDto
 import com.fancia.backend.shared.common.social.core.dto.LinkItem
 import jakarta.validation.Valid
 import jakarta.validation.constraints.NotBlank
@@ -12,4 +13,6 @@ data class UpdateVenueRequest(
     val tags: Set<@Size(max = 100, message = "Tag must be at most 100 characters") String>,
     @field:Valid
     val links: List<LinkItem> = emptyList(),
+    @field:Valid
+    val location: LocationDto? = null,
 )

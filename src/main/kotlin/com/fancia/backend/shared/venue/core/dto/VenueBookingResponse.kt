@@ -8,6 +8,8 @@ data class VenueBookingResponse(
     val id: UUID?,
     val venueId: UUID,
     val slotId: UUID,
+    val areaId: UUID?,
+    val areaName: String?,
     val requesterUserId: UUID,
     val status: VenueBookingStatus,
     val priceMinor: Long,

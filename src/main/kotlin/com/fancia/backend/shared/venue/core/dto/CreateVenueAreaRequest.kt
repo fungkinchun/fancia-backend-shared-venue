@@ -4,7 +4,7 @@ import jakarta.validation.constraints.Min
 import jakarta.validation.constraints.NotBlank
 import jakarta.validation.constraints.Size
 
-data class CreateVenueSlotAreaRequest(
+data class CreateVenueAreaRequest(
     @field:NotBlank
     @field:Size(max = 255)
     val name: String,
@@ -17,7 +17,7 @@ data class CreateVenueSlotAreaRequest(
     val sortOrder: Int = 0,
 )
 
-data class UpdateVenueSlotAreaRequest(
+data class UpdateVenueAreaRequest(
     @field:Size(max = 255)
     val name: String? = null,
     @field:Min(0)

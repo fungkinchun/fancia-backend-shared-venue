@@ -2,11 +2,9 @@ package com.fancia.backend.shared.venue.core.enums
 
 enum class VenueBookingStatus {
     REQUESTED,
-    APPROVED,
+    ACCEPTED,
     PAID,
-    COMPLETED,
     DENIED,
     WITHDRAWN,
-    CANCELLED,
     EXPIRED,
 }

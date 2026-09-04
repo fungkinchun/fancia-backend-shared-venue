@@ -1,5 +1,6 @@
 package com.fancia.backend.shared.venue.core.dto
 
+import com.fancia.backend.shared.common.core.enums.ResourceVisibility
 import com.fancia.backend.shared.common.location.core.dto.LocationDto
 import com.fancia.backend.shared.common.social.core.dto.LinkResponse
 import java.time.LocalDateTime
@@ -15,5 +16,6 @@ data class VenueResponse(
     var tags: Set<UUID> = emptySet(),
     var links: Set<LinkResponse> = emptySet(),
     var location: LocationDto? = null,
+    var visibility: ResourceVisibility = ResourceVisibility.PUBLIC,
     var savedByCurrentUser: Boolean? = null,
 )

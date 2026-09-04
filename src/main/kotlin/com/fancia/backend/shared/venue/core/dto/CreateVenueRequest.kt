@@ -1,5 +1,6 @@
 package com.fancia.backend.shared.venue.core.dto
 
+import com.fancia.backend.shared.common.core.enums.ResourceVisibility
 import com.fancia.backend.shared.common.location.core.dto.LocationDto
 import com.fancia.backend.shared.common.social.core.dto.LinkItem
 import com.fancia.backend.shared.common.tag.core.dto.TagItemRequest
@@ -19,4 +20,5 @@ data class CreateVenueRequest(
     val links: List<LinkItem> = emptyList(),
     @field:Valid
     val location: LocationDto? = null,
+    val visibility: ResourceVisibility? = ResourceVisibility.PUBLIC,
 )

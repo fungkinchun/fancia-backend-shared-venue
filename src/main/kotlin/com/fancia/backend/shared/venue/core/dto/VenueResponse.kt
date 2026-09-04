@@ -15,4 +15,5 @@ data class VenueResponse(
     var tags: Set<UUID> = emptySet(),
     var links: Set<LinkResponse> = emptySet(),
     var location: LocationDto? = null,
+    var savedByCurrentUser: Boolean? = null,
 )

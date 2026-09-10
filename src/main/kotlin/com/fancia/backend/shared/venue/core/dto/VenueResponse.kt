@@ -18,4 +18,7 @@ data class VenueResponse(
     var location: LocationDto? = null,
     var visibility: ResourceVisibility = ResourceVisibility.PUBLIC,
     var savedByCurrentUser: Boolean? = null,
+    var averageRating: Double? = null,
+    var ratingCount: Long = 0,
+    var currentUserRating: Int? = null,
 )
